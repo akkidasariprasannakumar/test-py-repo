@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroWorld - Electronics Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h1>ElectroWorld</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#compare">Compare</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Banner -->
+    <section class="banner" id="home">
+        <h2>Welcome to ElectroWorld</h2>
+        <p>Explore the Latest Electronic Gadgets</p>
+        <h3>Special Discounts Up To 40% OFF</h3>
+        <a href="#products" class="shop-btn">Explore Products</a>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories">
+        <h2>Our Categories</h2>
+
+        <div class="category-list">
+            <a href="#laptops">💻 Laptops</a>
+            <a href="#smartphones">📱 Smartphones</a>
+            <a href="#accessories">🎧 Accessories</a>
+            <a href="#smartdevices">⌚ Smart Devices</a>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products">
+        <h2>Featured Products</h2>
+
+        <!-- Laptop Products -->
+        <h3 id="laptops">💻 Laptops</h3>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <span class="discount">20% OFF</span>
+                <div class="product-image">💻</div>
+                <h3>HP Pavilion Laptop</h3>
+                <p>Intel Core i5 | 16GB RAM | 512GB SSD</p>
+                <h4>₹65,000 <del>₹81,000</del></h4>
+                <a href="#hp-details" class="view-btn">View Details</a>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">15% OFF</span>
+                <div class="product-image">💻</div>
+                <h3>Dell Inspiron</h3>
+                <p>Intel Core i7 | 16GB RAM | 1TB SSD</p>
+                <h4>₹78,000 <del>₹92,000</del></h4>
+                <a href="#dell-details" class="view-btn">View Details</a>
+            </div>
+
+        </div>
+
+        <!-- Smartphone Products -->
+        <h3 id="smartphones">📱 Smartphones</h3>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <span class="discount">25% OFF</span>
+                <div class="product-image">📱</div>
+                <h3>Samsung Galaxy</h3>
+                <p>256GB Storage | 50MP Camera | AMOLED</p>
+                <h4>₹55,000 <del>₹73,000</del></h4>
+                <a href="#samsung-details" class="view-btn">View Details</a>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">10% OFF</span>
+                <div class="product-image">📱</div>
+                <h3>Apple iPhone</h3>
+                <p>128GB Storage | Advanced Camera</p>
+                <h4>₹70,000 <del>₹78,000</del></h4>
+                <a href="#iphone-details" class="view-btn">View Details</a>
+            </div>
+
+        </div>
+
+        <!-- Accessories -->
+        <h3 id="accessories">🎧 Accessories</h3>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <span class="discount">30% OFF</span>
+                <div class="product-image">🎧</div>
+                <h3>Wireless Headphones</h3>
+                <p>Bluetooth | Noise Cancellation</p>
+                <h4>₹2,500 <del>₹3,500</del></h4>
+                <a href="#headphone-details" class="view-btn">View Details</a>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">15% OFF</span>
+                <div class="product-image">⌨️</div>
+                <h3>Gaming Keyboard</h3>
+                <p>RGB Lighting | Mechanical Keys</p>
+                <h4>₹1,700 <del>₹2,000</del></h4>
+                <a href="#keyboard-details" class="view-btn">View Details</a>
+            </div>
+
+        </div>
+
+        <!-- Smart Devices -->
+        <h3 id="smartdevices">⌚ Smart Devices</h3>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <span class="discount">20% OFF</span>
+                <div class="product-image">⌚</div>
+                <h3>Smart Watch</h3>
+                <p>Fitness Tracking | Heart Rate Monitor</p>
+                <h4>₹4,000 <del>₹5,000</del></h4>
+                <a href="#watch-details" class="view-btn">View Details</a>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">10% OFF</span>
+                <div class="product-image">🔊</div>
+                <h3>Smart Speaker</h3>
+                <p>Bluetooth | Wi-Fi | Voice Assistant</p>
+                <h4>₹4,500 <del>₹5,000</del></h4>
+                <a href="#speaker-details" class="view-btn">View Details</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Product Comparison Table -->
+    <section id="compare">
+        <h2>Product Comparison</h2>
+
+        <table>
+            <tr>
+                <th>Specifications</th>
+                <th>HP Pavilion</th>
+                <th>Dell Inspiron</th>
+            </tr>
+
+            <tr>
+                <td>Processor</td>
+                <td>Intel Core i5</td>
+                <td>Intel Core i7</td>
+            </tr>
+
+            <tr>
+                <td>RAM</td>
+                <td>16GB</td>
+                <td>16GB</td>
+            </tr>
+
+            <tr>
+                <td>Storage</td>
+                <td>512GB SSD</td>
+                <td>1TB SSD</td>
+            </tr>
+
+            <tr>
+                <td>Display</td>
+                <td>15.6 Inches</td>
+                <td>15.6 Inches</td>
+            </tr>
+
+            <tr>
+                <td>Price</td>
+                <td>₹65,000</td>
+                <td>₹78,000</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Product Details -->
+    <section class="details" id="hp-details">
+        <h2>HP Pavilion - Product Details</h2>
+        <p>Brand: HP</p>
+        <p>Processor: Intel Core i5</p>
+        <p>RAM: 16GB</p>
+        <p>Storage: 512GB SSD</p>
+        <p>Display: 15.6-inch Full HD</p>
+        <p>Operating System: Windows</p>
+        <p>Warranty: 1 Year</p>
+        <p>Price: ₹65,000</p>
+    </section>
+
+    <section class="details" id="dell-details">
+        <h2>Dell Inspiron - Product Details</h2>
+        <p>Brand: Dell</p>
+        <p>Processor: Intel Core i7</p>
+        <p>RAM: 16GB</p>
+        <p>Storage: 1TB SSD</p>
+        <p>Display: 15.6-inch</p>
+        <p>Warranty: 1 Year</p>
+        <p>Price: ₹78,000</p>
+    </section>
+
+    <section class="details" id="samsung-details">
+        <h2>Samsung Galaxy - Product Details</h2>
+        <p>Storage: 256GB</p>
+        <p>Camera: 50MP</p>
+        <p>Display: AMOLED</p>
+        <p>Price: ₹55,000</p>
+    </section>
+
+    <section class="details" id="iphone-details">
+        <h2>Apple iPhone - Product Details</h2>
+        <p>Storage: 128GB</p>
+        <p>Camera: Advanced Camera System</p>
+        <p>Operating System: iOS</p>
+        <p>Price: ₹70,000</p>
+    </section>
+
+    <section class="details" id="headphone-details">
+        <h2>Wireless Headphones - Product Details</h2>
+        <p>Connectivity: Bluetooth</p>
+        <p>Feature: Noise Cancellation</p>
+        <p>Price: ₹2,500</p>
+    </section>
+
+    <section class="details" id="keyboard-details">
+        <h2>Gaming Keyboard - Product Details</h2>
+        <p>Type: Mechanical Keyboard</p>
+        <p>Feature: RGB Lighting</p>
+        <p>Price: ₹1,700</p>
+    </section>
+
+    <section class="details" id="watch-details">
+        <h2>Smart Watch - Product Details</h2>
+        <p>Features: Fitness Tracking</p>
+        <p>Heart Rate Monitor</p>
+        <p>Price: ₹4,000</p>
+    </section>
+
+    <section class="details" id="speaker-details">
+        <h2>Smart Speaker - Product Details</h2>
+        <p>Connectivity: Wi-Fi and Bluetooth</p>
+        <p>Feature: Voice Assistant</p>
+        <p>Price: ₹4,500</p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h2>ElectroWorld</h2>
+        <p>Your Trusted Online Electronics Catalog</p>
+        <p>Email: support@electroworld.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>© 2026 ElectroWorld. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
