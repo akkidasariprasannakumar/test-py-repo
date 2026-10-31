@@ -1,0 +1,234 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b0b16;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #151528;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #00e5ff;
+    font-size: 28px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00e5ff;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 400px;
+    background: linear-gradient(135deg, #171738, #351052, #092d42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 45px;
+    color: #00e5ff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00c8e8;
+    color: #080818;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Common Sections */
+.section {
+    padding: 55px 7%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #00e5ff;
+    margin-bottom: 35px;
+}
+
+.dark-section {
+    background: #151528;
+}
+
+/* Cards Layout */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* Game Cards */
+.card, .team-card, .player-card, .news-card {
+    background: #202039;
+    padding: 22px;
+    border-radius: 15px;
+    transition: 0.4s;
+    border: 1px solid #303050;
+}
+
+.card:hover, .team-card:hover,
+.player-card:hover, .news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00c8e8;
+    border-color: #00e5ff;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3, .team-card h3,
+.player-card h3, .news-card h3 {
+    color: #00e5ff;
+    margin-bottom: 12px;
+}
+
+.card p, .team-card p,
+.player-card p, .news-card p {
+    color: #ccccdd;
+    line-height: 1.7;
+}
+
+.card span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffcc66;
+}
+
+/* Player Avatar */
+.avatar {
+    font-size: 50px;
+    background: #303050;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #202039;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 16px;
+    border-bottom: 1px solid #41415a;
+    text-align: center;
+}
+
+th {
+    background: #00bcd4;
+    color: #080818;
+}
+
+tr:hover {
+    background: #30304d;
+}
+
+/* Footer */
+footer {
+    background: #080811;
+    text-align: center;
+    padding: 30px;
+    color: #ccccdd;
+}
+
+footer h2 {
+    color: #00e5ff;
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 35px 4%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 10px 5px;
+    }
+}
